@@ -36,7 +36,7 @@
             <a href="#about" class="nav__link">About</a>
           </li>
           <li class="nav__item">
-            <a href="#work" class="nav__link">Work</a>
+            <a href="#work" class="nav__link">Portfolio</a>
           </li>
           <li class="nav__item">
             <a href="#contact" class="nav__link">Contact</a>
@@ -136,8 +136,137 @@
           </div>
         </div>
        </section>
-      <!--===== Work =====-->
+      <!--===== Portfolio =====-->
       <section class="work" id="work">
+        <h2 data-heading="My Portfolio" class="section__title">Recent Works</h2>
+
+        <div class="work__filters">
+          <span class="work__item active-work">All</span>
+          <span class="work__item">Web</span>
+          <span class="work__item">Client Projects</span>
+        </div>
+        <div class="work__container container grid">
+          <div class="work__card">
+            <img src="assets/img/Project 1.png" alt="" class="work__img">
+            <h3 class="work__title">Pokemon App</h3>
+            <span class="work__button">Demo
+              <i class="uil uil-arrow-right work__button-icon"></i>
+            </span>
+            <div class="portfolio__items-details">
+              <h3 class="details__title">Web app design and execution</h3>
+              <p class="details__description">
+                This project is a demonstration of basic Javascript as well as utilization of AJAX and APIs with 
+                Bootstrap culminating in an application to view stats of different Pokemon. 
+                The pokemon present as buttons with their images on them. 
+                When clicked a pop-up comes up with their stats and sprites.
+              </p>
+              <ul class="details__info">
+                <li>Created - <span>Nov 2021</span></li>
+                <li>Technologies - <span>HTML, CSS, Javascript, ESlint, Prettier, Bootstrap, jQuery</span></li>
+                <li>Role - <span>Lead</span></li>
+                <li>View - <span><a href="https://foxyhart.github.io/Pokemon-Specs/">Live app</a></span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="work__card">
+            <img src="assets/img/Studio_ghibli-backend.png" alt="" class="work__img">
+            <h3 class="work__title">Studio Ghibli API</h3>
+            <span class="work__button">Demo
+              <i class="uil uil-arrow-right work__button-icon"></i>
+            </span>
+            <div class="portfolio__items-details">
+              <h3 class="details__title">Backend API for a client application</h3>
+              <p class="details__description">
+                My role in the project is to set up the collection of movies, 
+                making their vital information available to users
+                In the API Users will be able to register, updated their information as well as add and
+                 remove their favorite Studio Ghibli movies.
+              </p>
+              <ul class="details__info">
+                <li>Created - <span>Dec 2021</span></li>
+                <li>Technologies - <span>JavaScript and HTML
+                  MERN (MongoDB, Express, React, and Node.js) stack, REST architecture
+                  Deployed to Heroku
+                  Documentation generated with JSDoc</span></li>
+                <li>Role - <span>Lead</span></li>
+                <li>View - <span><a href="https://github.com/FoxyHart/Studio-Ghibli-API">Live app</a></span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="work__card">
+            <img src="assets/img/Studio_ghibli-frontend.png" alt="" class="work__img">
+            <h3 class="work__title">Studio Ghibli Frontend</h3>
+            <span class="work__button">Demo
+              <i class="uil uil-arrow-right work__button-icon"></i>
+            </span>
+            <div class="portfolio__items-details">
+              <h3 class="details__title">Client side SPA application</h3>
+              <p class="details__description">
+                This single-page, responsive application (SPA) is the client-side for an application called myFlix based on its existing server-side code 
+                (REST API and database). It features routing, rich interactions, several interface views, and a polished user experience.
+                The frontend for this application consists of one main view that switches between the following subviews:
+                A login view, user registration view, single movie view, genre view, director view, and a profile view.
+              </p>
+              <ul class="details__info">
+                <li>Created - <span>Feb 2022</span></li>
+                <li>Technologies - <span>JavaScript, HTML, SCSS, React, React-Redux,
+                  Styled with React Bootstrap, Built with Parcel, MERN (MongoDB, Express, React, and Node.js) stack</span></li>
+                <li>Role - <span>Lead</span></li>
+                <li>View - <span><a href="https://mystudioghibliapplication.netlify.app/">Live app</a></span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="work__card">
+            <img src="" alt="" class="work__img">
+            <h3 class="work__title">Meet App</h3>
+            <span class="work__button">Demo
+              <i class="uil uil-arrow-right work__button-icon"></i>
+            </span>
+            <div class="portfolio__items-details">
+              <h3 class="details__title">Meet App is a serverless PWA built with React using a TDD technique.</h3>
+              <p class="details__description">
+                Meet App is a serverless, progressive web application (PWA) built with React
+                using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
+                Users are able to: Filter events by city, Show/hide event details, Specify number of events,
+                Use the app when offline, Add an app shortcut to the home screen, And view a chart showing the number of upcoming events by city.
+              </p>
+              <ul class="details__info">
+                <li>Created - <span>Apr 2022</span></li>
+                <li>Technologies - <span>HTML, CSS, Javascript, React, React-Redux, AWS Lambda, Serverless, Google Calendar API, OAuth2</span></li>
+                <li>Role - <span>Lead</span></li>
+                <li>View - <span><a href="">Live app coming soon</a></span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="work__card">
+            <img src="assets/img/Beela.png" alt="" class="work__img">
+            <h3 class="work__title">Beela Website</h3>
+            <span class="work__button">Demo
+              <i class="uil uil-arrow-right work__button-icon"></i>
+            </span>
+            <div class="portfolio__items-details">
+              <h3 class="details__title">Web-based app to help Women and Non-Bininaries get into Tech</h3>
+              <p class="details__description">
+                Developed a responsive homepage from the design phase to the
+                implementation and a new user hub MVP, through Agile methods
+                and extensive collaboration with a team of 40 in development,
+                research, design, and product teams.
+                ~Stack: React, Next.js, GraphQL, TypeScript, SCSS, React-BootStra
+              </p>
+              <ul class="details__info">
+                <li>Created - <span>Apr 2022</span></li>
+                <li>Technologies - <span>HTML, CSS, Javascript, React, React-BootStrap, Bootstrap, </span></li>
+                <li>Role - <span>Apprentice</span></li>
+                <li>View - <span><a href="https://beela-phase-3-alpha.vercel.app/">Live website</a></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
 
       </section>
       <!--===== Contact =====-->
