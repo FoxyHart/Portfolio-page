@@ -137,16 +137,17 @@
         </div>
        </section>
       <!--===== Portfolio =====-->
-      <section class="work" id="work">
+      <section class="work section" id="work">
         <h2 data-heading="My Portfolio" class="section__title">Recent Works</h2>
 
         <div class="work__filters">
-          <span class="work__item active-work">All</span>
-          <span class="work__item">Web</span>
-          <span class="work__item">Client Projects</span>
+          <span class="work__item active-work"  data-filter="all">All</span>
+          <span class="work__item"  data-filter=".current">Current</span>
+          <span class="work__item"  data-filter=".client">Client</span>
+          <span class="work__item"  data-filter=".personal">Personal</span>
         </div>
         <div class="work__container container grid">
-          <div class="work__card">
+          <div class="work__card mix personal">
             <img src="assets/img/Project 1.png" alt="" class="work__img">
             <h3 class="work__title">Pokemon App</h3>
             <span class="work__button">Demo
@@ -164,12 +165,12 @@
                 <li>Created - <span>Nov 2021</span></li>
                 <li>Technologies - <span>HTML, CSS, Javascript, ESlint, Prettier, Bootstrap, jQuery</span></li>
                 <li>Role - <span>Lead</span></li>
-                <li>View - <span><a href="https://foxyhart.github.io/Pokemon-Specs/">Live app</a></span></li>
+                <li>View - <span><a href="https://foxyhart.github.io/Pokemon-Specs/" target="_blank">Live app</a></span></li>
               </ul>
             </div>
           </div>
 
-          <div class="work__card">
+          <div class="work__card mix personal">
             <img src="assets/img/Studio_ghibli-backend.png" alt="" class="work__img">
             <h3 class="work__title">Studio Ghibli API</h3>
             <span class="work__button">Demo
@@ -190,12 +191,12 @@
                   Deployed to Heroku
                   Documentation generated with JSDoc</span></li>
                 <li>Role - <span>Lead</span></li>
-                <li>View - <span><a href="https://github.com/FoxyHart/Studio-Ghibli-API">Live app</a></span></li>
+                <li>View - <span><a href="https://github.com/FoxyHart/Studio-Ghibli-API" target="_blank">Live app</a></span></li>
               </ul>
             </div>
           </div>
 
-          <div class="work__card">
+          <div class="work__card mix personal">
             <img src="assets/img/Studio_ghibli-frontend.png" alt="" class="work__img">
             <h3 class="work__title">Studio Ghibli Frontend</h3>
             <span class="work__button">Demo
@@ -214,13 +215,13 @@
                 <li>Technologies - <span>JavaScript, HTML, SCSS, React, React-Redux,
                   Styled with React Bootstrap, Built with Parcel, MERN (MongoDB, Express, React, and Node.js) stack</span></li>
                 <li>Role - <span>Lead</span></li>
-                <li>View - <span><a href="https://mystudioghibliapplication.netlify.app/">Live app</a></span></li>
+                <li>View - <span><a href="https://mystudioghibliapplication.netlify.app/" target="_blank">Live app</a></span></li>
               </ul>
             </div>
           </div>
 
-          <div class="work__card">
-            <img src="" alt="" class="work__img">
+          <div class="work__card mix personal current">
+            <img src="assets/img/2022-07-12.png" alt="" class="work__img">
             <h3 class="work__title">Meet App</h3>
             <span class="work__button">Demo
               <i class="uil uil-arrow-right work__button-icon"></i>
@@ -237,12 +238,12 @@
                 <li>Created - <span>Apr 2022</span></li>
                 <li>Technologies - <span>HTML, CSS, Javascript, React, React-Redux, AWS Lambda, Serverless, Google Calendar API, OAuth2</span></li>
                 <li>Role - <span>Lead</span></li>
-                <li>View - <span><a href="">Live app coming soon</a></span></li>
+                <li>View - <span><a href="" target="_blank">Live app coming soon</a></span></li>
               </ul>
             </div>
           </div>
 
-          <div class="work__card">
+          <div class="work__card mix client">
             <img src="assets/img/Beela.png" alt="" class="work__img">
             <h3 class="work__title">Beela Website</h3>
             <span class="work__button">Demo
@@ -261,14 +262,63 @@
                 <li>Created - <span>Apr 2022</span></li>
                 <li>Technologies - <span>HTML, CSS, Javascript, React, React-BootStrap, Bootstrap, </span></li>
                 <li>Role - <span>Apprentice</span></li>
-                <li>View - <span><a href="https://beela-phase-3-alpha.vercel.app/">Live website</a></span></li>
+                <li>View - <span><a href="https://beela-phase-3-alpha.vercel.app/" target="_blank">Live website</a></span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="work__card mix personal current">
+            <img src="assets/img/coming-soon.jpg" alt="" class="work__img">
+            <h3 class="work__title">Animal Crossing App</h3>
+            <span class="work__button">Demo
+              <i class="uil uil-arrow-right work__button-icon"></i>
+            </span>
+            <div class="portfolio__items-details">
+              <h3 class="details__title">Animal Crossing App is.</h3>
+              <p class="details__description">
+                
+              </p>
+              <ul class="details__info">
+                <li>Created - <span>June 2022</span></li>
+                <li>Technologies - <span>HTML, CSS, Javascript, React, React-Redux</span></li>
+                <li>Role - <span>Lead</span></li>
+                <li>View - <span><a href="" target="_blank">Live app coming soon</a></span></li>
               </ul>
             </div>
           </div>
         </div>
-      
-
       </section>
+      <!-- Portfolio Popup -->
+      <div class="portfolio__popup">
+        <div class="portfolio__popup-inner">
+          <div class="portfolio__popup-content grid">
+            <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+            <div class="pp__thumbnail">
+              <img src="assets/img/Project 1.png" alt="" class="portfolio__popup-img">
+            </div>
+            <div class="portfolio__popup-info">
+              <div class="portfolio__popup-subtitle">Featured - <span>Personal</span></div>
+              <div class="portfolio__popup-body">
+                <h3 class="details__title">Web app design and execution</h3>
+              <p class="details__description">
+                This project is a demonstration of basic Javascript as well as utilization of AJAX and APIs with 
+                Bootstrap culminating in an application to view stats of different Pokemon. 
+                The pokemon present as buttons with their images on them. 
+                When clicked a pop-up comes up with their stats and sprites.
+              </p>
+              <ul class="details__info">
+                <li>Created - <span>Nov 2021</span></li>
+                <li>Technologies - <span>HTML, CSS, Javascript, ESlint, Prettier, Bootstrap, jQuery</span></li>
+                <li>Role - <span>Lead</span></li>
+                <li>View - <span><a href="https://foxyhart.github.io/Pokemon-Specs/" target="_blank">Live app</a></span></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
       <!--===== Contact =====-->
       <section class="contact" id="contact"></section>
     </main>
@@ -278,7 +328,7 @@
     <!--======= SCROLL UP =======-->
 
     <!--====== MIXITUP FILTER ======-->
-    <script src=""></script>
+    <script src="assets/js/mixitup.min.js"></script>
 
     <!--===== SWIPER JS =====-->
     <script src=""></script>
