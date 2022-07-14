@@ -72,7 +72,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 html {
@@ -263,22 +263,23 @@ input {
 }
 
 /* Main */
-/* .main {
+.main {
   margin-left: 100px;
-  height: 3600px;
-} */
+  
+}
 
 /* Home Section */
 
 .home__data{
   margin-top: 90px;
 }
+.home {
+  height: 100vh;
+}
 .home__container {
   position: relative;
   height: 100%;
-  align-items: flex-end;
-  padding-bottom: 145px;
-  padding-left: 20px;
+  align-items: center;
 }
 .home__social {
   position: absolute;
@@ -322,8 +323,8 @@ transform: translateY(.25rem);
   height: 350px;
   border-radius: 1.5rem;
   float: right;
-  justify-self: top;
-  /* margin-top: -150px; */
+  /* justify-self: top; */
+  margin-top: 150px;
 }
 
 .home__title {
@@ -427,14 +428,14 @@ transform: translateY(.25rem);
   grid-template-columns: repeat(2, 1fr);
   column-gap: 4 rem;
   align-items: center;
-  margin-top: 100px;
+  padding-left: 100px;
+  margin-left: 100px;
+  margin-bottom: 75px;
 }
 .about__img {
-  width: 350px;
-  height: 350px;
-  border-radius: 1.5rem;
+  width: 480px;
+  border-radius: 0.75rem;
   justify-self: center;
-  margin-bottom: 100px;
 }
 
 .about__heading {
@@ -827,7 +828,7 @@ textarea.input {
   padding: 3rem 0 1.5rem;
   max-height: 150px;
   margin: 10px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .footer__title {
