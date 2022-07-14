@@ -17,9 +17,10 @@
     <!--======== MAIN CSS =======-->
     <link rel="stylesheet" href="assets/styles/styles.css">
 
-    <title>Mae Schreiber- REACT/ Frontend Developer</title>
+    <title>Mae Schreiber- REACT/Frontend Developer</title>
   </head>
   <body>
+
     <!--====== SIDE NAV BAR ======-->
 <aside class="sidebar" id="sidebar">
   <nav class="nav">
@@ -43,15 +44,13 @@
           </li>
         </ul>
       </div>
-      <div class="btn__share">
-         <i class="uil uil-share-alt social__share"></i>
-      </div>
     </div>
   </nav>
 </aside>
   
     <!--====== MAIN =======-->
     <main class="main">
+
       <!--===== Home =====-->
       <section class="home" id="home">
           <div class="home__container container grid">
@@ -109,13 +108,15 @@
         <h2 data-heading="My Intro" class="section__title">About Me</h2>
 
         <div class="about__container container grid">
-          <img src="assets/img/frame-light.jpg" alt=""class="about__img">
+          <img src="assets/img/Frame.jpg" alt=""class="about__img">
 
           <div class="about__data">
-            <h3 class="about__heading">Greetings, I am Mae Schreiber, Based in the US</h3>
+            <h3 class="about__heading">Hello, I am Mae Schreiber, I am based in the US</h3>
             <p class="about_description">I am a Web Developer with a background in full-stack development, 
               cyber security, and improving consumer experience. By pairing my knowledge with a creative
-               instinct, I focus on security conscientious development to build better, safer products. </p>
+               instinct, I focus on security conscientious development to build better, safer products.
+               I enjoy learning new technologies and being challenged. I am thrilled when I can solve an issue or bug
+               In my off time I enjoy playing video games and making all kinds of crafts.  </p>
 
                <div class="about__info grid">
                 <div class="about__box">
@@ -129,6 +130,11 @@
                    <h3 class="about__title">Completed</h3>
                    <span class="about__subtitle">6+ projects, several in progress</span>
                 </div>
+                <div class="about__box">
+                  <i class="uil uil-hard-hat about__icon"></i>
+                  <h3 class="about__title">Availablility for work</h3>
+                  <span class="about__subtitle">Currently looking for projects </span>
+              </div>
               </div>
               <a href="#contact" class="button"><i class="uil uil-navigator button__icon"></i>
               Contact Me
@@ -136,6 +142,7 @@
           </div>
         </div>
        </section>
+
       <!--===== Portfolio =====-->
       <section class="work section" id="work">
         <h2 data-heading="My Portfolio" class="section__title">Recent Works</h2>
@@ -288,6 +295,7 @@
           </div>
         </div>
       </section>
+
       <!-- Portfolio Popup -->
       <div class="portfolio__popup">
         <div class="portfolio__popup-inner">
@@ -320,12 +328,107 @@
 
      
       <!--===== Contact =====-->
-      <section class="contact" id="contact"></section>
-    </main>
+      <section class="contact section" id="contact">
+        <h2 data-heading="Get in touch" class="section__title">Contact Me</h2>
+
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <div class="contact__info">
+
+              <div class="contact__card">
+                <i class="uil uil-phone-volume contact__icon"></i>
+                <h3 class="contact__card-title">Phone</h3>
+                <span class="contact__card-data">(812)558-8071</span>
+              </div>
+            
+          
+            <div class="contact__card">
+              <i class="uil uil-linkedin contact__icon"></i>
+              <h3 class="contact__card-title">LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/mae-schreiber-react-developer/" target="_blank" class="contact__button">
+                Contact me <i class="uil uil-arrow-right contact__button-icon"></i>
+              </a>
+            </div>
+
+            <div class="contact__card">
+              <i class="uil uil-github contact__icon"></i>
+              <h3 class="contact__card-title">Github</h3>
+              <a href="https://github.com/FoxyHart" target="_blank" class="contact__button">
+                See my code <i class="uil uil-arrow-right contact__button-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+         <div class="contact__content">
+            <form action="mailto:jcagneymc@gmail.com" class="contact__form">
+                <div class="input__container">
+                    <input type="text" class="input">
+                    <label for="">Name</label>
+                    <span>Name</span>
+                </div>
+                <div class="input__container">
+                    <input type="email" class="input">
+                    <label for="">Email</label>
+                    <span>Email</span>
+                </div>
+                <div class="input__container">
+                    <input type="tel" class="input">
+                    <label for="">Phone</label>
+                    <span>Phone</span>
+                </div>
+                <div class="input__container textarea">
+                    <textarea name="" id="" class="input"></textarea>
+                    <label for="">Message</label>
+                    <span>Message</span>
+                </div>
+                <button type="submit" class="button submit__button"><i class="uil uil-navigator button__icon submit__button-icon"></i>
+                    Send Message
+                </button>
+            </form>
+        </div>
+      </div>
+    </section>
 
     <!--======= FOOTER ======-->
+    <footer class="footer">
+      <div class="footer__bg">
+          <div class="footer__container container grid">
+              <div>
+                  <h1 class="footer__title">Mae</h1>
+                  <span class="footer__subtitle">React/Frontend developer</span>
+              </div>
 
+              <ul class="footer__links">
+                <li>
+                  <a href="#about" class="footer__link">About</a>
+              </li>
+                  <li>
+                      <a href="#work" class="footer__link">Work</a>
+                  </li>
+                  <li>
+                      <a href="#contact" class="footer__link">Contact</a>
+                  </li>
+              </ul>
+
+              <div class="footer__socials">
+                  <a href="https://github.com/FoxyHart" target="_blank" class="footer__social">
+                      <i class="uil uil-github"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/mae-schreiber-react-developer/" target="_blank" class="footer__social">
+                      <i class="uil uil-linkedin"></i>
+                  </a>
+              </div>
+          </div>
+          <p class="footer__copy">Made by Mae Schreiber</p>
+      </div>
+  </footer>
+  </main>
     <!--======= SCROLL UP =======-->
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-angle-double-up scrollup__icon"></i>
+  </a>
 
     <!--====== MIXITUP FILTER ======-->
     <script src="assets/js/mixitup.min.js"></script>
