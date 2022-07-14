@@ -24,7 +24,7 @@
 --highlight-color: #ac772d;
 
   /* Fonts and Typography */
---font-body:'Joan', 'Garamond', sans-serif;
+--body-font:'Joan', 'Garamond', sans-serif;
 
 /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ...*/
 --biggest-font-size: 3.25 rem;
@@ -87,7 +87,7 @@ html {
 body,
 button,
 input {
-  font-family: var(--font-body);
+  font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
 
@@ -273,9 +273,9 @@ input {
 .home__data{
   margin-top: 90px;
 }
-.home {
+/* .home {
   height: 100vh;
-}
+} */
 .home__container {
   position: relative;
   height: 100%;
@@ -424,16 +424,17 @@ transform: translateY(.25rem);
 
 
 /* About Section */
+.about {
+  margin-top: 50px;
+}
 .about__container {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 4 rem;
   align-items: center;
-  padding-left: 100px;
-  margin-left: 100px;
-  margin-bottom: 75px;
+ margin-top: 150px;
 }
 .about__img {
-  width: 480px;
+  width: 350px;
   border-radius: 0.75rem;
   justify-self: center;
 }
