@@ -513,8 +513,8 @@ transform: translateY(.25rem);
 .work__img {
   border-radius: .5rem;
   margin-bottom: var(--mb-1);
-  width: max-content;
-  height: max-content;
+  /* width: max-content;
+  height: max-content; */
 }
 
 .work__title {
@@ -1059,14 +1059,14 @@ textarea.input {
 /* For Medium Devices */
 @media screen and (max-width: 768px) {
  .section {
-  height: 1000px;
+  height: 100%;
  }
   .about__img {
       width: 250px;
   }
 
   .work__container {
-      grid-template-columns: 330px;
+      grid-template-columns: repeat(2, 200px);
   }
 
   .contact__container {
