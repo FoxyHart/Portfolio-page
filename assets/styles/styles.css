@@ -1123,6 +1123,7 @@ textarea.input {
   html {
     scroll-behavior: smooth;
   background: url(../img/bg-moblie.jpg) no-repeat center fixed ; 
+  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
