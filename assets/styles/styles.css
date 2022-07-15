@@ -136,7 +136,7 @@ input {
 }
 /* Reusable CSS classes */
 .section {
-  padding: 6.5rem 0 2rem;
+  padding: 2rem 0 1rem;
 }
 
 .section__title {
@@ -431,7 +431,7 @@ transform: translateY(.25rem);
   grid-template-columns: repeat(2, 1fr);
   column-gap: 4 rem;
   align-items: center;
- margin-top: 150px;
+ margin-top: 10px;
 }
 .about__img {
   width: 350px;
@@ -660,6 +660,9 @@ visibility: visible;
   padding: 1rem;
   border-radius: .5rem;
   text-align: center;
+}
+.contact__title {
+  padding-bottom: 75px;
 }
 
 .contact__card-icon {
@@ -1066,7 +1069,7 @@ textarea.input {
   }
 
   .work__container {
-      grid-template-columns: repeat(2, 200px);
+      grid-template-columns: repeat(2, 250px);
   }
 
   .contact__container {
@@ -1117,6 +1120,14 @@ textarea.input {
 }
 
 @media screen and (max-width: 576px) {
+  html {
+    scroll-behavior: smooth;
+  background: url(../img/bg-moblie.jpg) no-repeat center fixed ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
   .nav__toggle {
       right: initial;
       left: 1.5rem;
@@ -1191,7 +1202,7 @@ textarea.input {
     margin-bottom: 200px;
   }
   .work__filters {
-    margin-left: 30%;
+    margin-left: 20%;
   }
   .footer__container {
       grid-template-columns: 1fr;
