@@ -575,7 +575,7 @@ visibility: visible;
 }
 
 .portfolio__popup-inner {
-  background-color: var(--modal-color);
+  background-color: var(--scroll-bar-color);
   width: 900px;
   border-radius: .5rem;
   padding: 2.5rem;
@@ -602,7 +602,7 @@ visibility: visible;
 }
 
 .portfolio__popup-info {
-  color: var(--highlight-color);
+  color: var(--dark-highlight-color);
 }
 
 .portfolio__popup-subtitle {
@@ -611,7 +611,7 @@ visibility: visible;
 }
 
 .details__title{
-  color: var(--dark-highlight-color);
+  color: var(--title-color);
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1);
@@ -715,7 +715,7 @@ visibility: visible;
 .input {
   width: 100%;
   border: 2px solid var(--text-color);
-  background-color: var(--scroll-bar-color);
+  background-color: rgb(203, 178, 142, .75);
   padding: .6rem 1.2rem;
   color: var(--title-color);
   font-weight: var(--font-medium);
@@ -731,7 +731,7 @@ textarea.input {
   min-height: 140px;
   border-radius: .50rem;
   resize: none;
-  background-color: var(--scroll-bar-color);
+  background-color: rgb(203, 178, 142, .75);
 }
 
 .input__container label {
@@ -1090,6 +1090,7 @@ textarea.input {
 
   .footer__bg {
       padding: 2rem 0 3rem;
+      background-color: rgb(203, 178, 142, .75);
   }
 
   .footer__copy {
@@ -1120,7 +1121,10 @@ textarea.input {
       right: initial;
       left: 1.5rem;
   }
-
+  .section {
+    height: 100%;
+    padding-top: 10.5rem;
+  }
   .home {
       background-image: none;
       height: initial;
@@ -1133,9 +1137,9 @@ textarea.input {
   }
 
   .home__img {
-      display: block;
-      width: 250px;
-      justify-self: center;
+      display: none;
+      /* width: 150px;
+      justify-self: center; */
   }
 
   .home__social {
@@ -1143,6 +1147,7 @@ textarea.input {
       right: -1rem;
       flex-direction: column;
       row-gap: 3.5rem;
+      top: -5rem;
   }
 
   .home__social-follow {
@@ -1178,15 +1183,26 @@ textarea.input {
 
   .contact__container,
   .work__container {
-      grid-template-columns: 300px;
+      grid-template-columns: 200px;
   }
-
+  .work__container{
+    padding-left: 0;
+    height: 1300px;
+    margin-bottom: 200px;
+  }
+  .work__filters {
+    margin-left: 30%;
+  }
   .footer__container {
       grid-template-columns: 1fr;
   }
 
   .footer__links {
       justify-self: flex-start;
+  }
+
+  .footer__bg {
+    background-color: transparent;
   }
 }
 
