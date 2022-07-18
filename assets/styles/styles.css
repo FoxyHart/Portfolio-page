@@ -81,6 +81,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-attachment: scroll;
   background: url(../img/light-mode.jpg) no-repeat center fixed ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
