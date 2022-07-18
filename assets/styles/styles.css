@@ -22,6 +22,10 @@
 --d-text-color: #ebbcb5;
 --d-scroll-bar-color: #c4a0a6;
 --highlight-color: #ac772d;
+--modal-color: #c3cfae;
+--darker-modal-color:#abbb90;
+--light-highlight-color: #ac8a5b;
+--dark-highlight-color: #683e03; 
 
   /* Fonts and Typography */
 --body-font:'Joan', 'Garamond', sans-serif;
@@ -121,6 +125,31 @@ button,
 input {
   border: none;
   outline: none;
+}
+/* Dark theme variables */
+body.dark-theme {
+--d-skin-color:  #06141a;
+--d-title-color: #867b8c;
+--d-body-color: #b0a8b7;
+--d-text-color: #ebbcb5;
+--d-scroll-bar-color: #c4a0a6;
+--highlight-color: #bd7883;
+--modal-color: #c3cfae;
+--darker-modal-color:#a994bb;
+--light-highlight-color: #bb838c;
+--dark-highlight-color: #bd6473; 
+}
+/* Button dark theme */
+
+.change__theme{
+  font-size: 1.25rem;
+  color: var(--highlight-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
+
+.change__theme:hover {
+  color: var(--title-color);
 }
 
 /* Layout */
@@ -1123,7 +1152,6 @@ textarea.input {
   html {
     scroll-behavior: smooth;
   background: url(../img/bg-moblie.jpg) no-repeat center fixed ; 
-  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1255,3 +1283,15 @@ textarea.input {
       column-gap: .25rem;
   }
 }
+
+@supports ( -webkit-touch-callout : none) {
+  .selector {
+  background-attachment:scroll
+  }
+  }
+  
+  @supports not ( -webkit-touch-callout : none) {
+  .selector {
+  background-attachment: fixed;
+  }
+  }
