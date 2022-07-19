@@ -1286,13 +1286,13 @@ textarea.input {
 }
 
 @supports ( -webkit-touch-callout : none) {
-  .selector {
-  background-attachment:scroll
-  }
-  }
-  
-  @supports not ( -webkit-touch-callout : none) {
-  .selector {
-  background-attachment: fixed;
+  .bg {
+    scroll-behavior: smooth;
+    position: fixed;
+    background: url(../img/bg-moblie.jpg) no-repeat center fixed ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
   }
