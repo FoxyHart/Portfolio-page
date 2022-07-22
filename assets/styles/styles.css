@@ -1293,6 +1293,6 @@ textarea.input {
 
 @supports ( -webkit-touch-callout : none) {
  html {
-  background-image: #f4f1ec;
+  background-color: var(--skin-color);
  }
   }
