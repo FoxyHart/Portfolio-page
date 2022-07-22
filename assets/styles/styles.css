@@ -3,8 +3,6 @@
 /* VARIABLES CSS*/
 
 :root {
-   background-attachment: fixed; 
-   
   /* COLORS  Light-mode*/
 --skin-color:  #f4f1ec;
 --title-color: #2f3b1c;
@@ -1287,14 +1285,8 @@ textarea.input {
   }
 }
 
-/* @supports ( -webkit-touch-callout : none) {
-  .bg {
-    scroll-behavior: smooth;
-    position: fixed;
-    background: url(../img/bg-moblie.jpg) no-repeat center fixed ; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+@supports ( -webkit-touch-callout : none) {
+ html {
+  background-image: none;
+ }
   }
-  } */
