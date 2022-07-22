@@ -3,6 +3,8 @@
 /* VARIABLES CSS*/
 
 :root {
+   background-attachment: fixed; 
+   
   /* COLORS  Light-mode*/
 --skin-color:  #f4f1ec;
 --title-color: #2f3b1c;
@@ -1285,7 +1287,7 @@ textarea.input {
   }
 }
 
-@supports ( -webkit-touch-callout : none) {
+/* @supports ( -webkit-touch-callout : none) {
   .bg {
     scroll-behavior: smooth;
     position: fixed;
@@ -1295,4 +1297,4 @@ textarea.input {
     -o-background-size: cover;
     background-size: cover;
   }
-  }
+  } */
