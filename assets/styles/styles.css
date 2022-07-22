@@ -156,7 +156,7 @@ body.dark-theme {
 /* Layout */
 .container {
   max-width: 1250px;
-  max-height: 900px;
+  max-height: 1100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -962,7 +962,7 @@ textarea.input {
 @media screen and (max-width: 1408px) {
   .container {
       margin-left: var(--mb-2-5);
-      margin-right: var(--mb-2-5);
+      /* margin-right: var(--mb-2-5); */
   }
 }
 
@@ -984,7 +984,7 @@ textarea.input {
 @media screen and (max-width: 1024px) {
   .container {
       margin-left: var(--mb-1-5);
-      margin-right: var(--mb-1-5);
+      /* margin-right: var(--mb-1-5); */
   }
 
   .sidebar {
@@ -1066,6 +1066,7 @@ textarea.input {
 
   .work__card {
       padding: 1rem;
+      max-height: 250px;
   }
 
   .work__img {
@@ -1091,6 +1092,9 @@ textarea.input {
 
 /* For Medium Devices */
 @media screen and (max-width: 768px) {
+  #contact {
+    height: 100%;
+  }
  .section {
   height: 100%;
  }
@@ -1099,7 +1103,7 @@ textarea.input {
   }
 
   .work__container {
-      grid-template-columns: repeat(2, 250px);
+      grid-template-columns: 250px;
   }
 
   .contact__container {
@@ -1224,7 +1228,7 @@ textarea.input {
 
   .contact__container,
   .work__container {
-      grid-template-columns: 200px;
+      grid-template-columns: 250px;
   }
   .work__container{
     padding-left: 0;
@@ -1270,10 +1274,12 @@ textarea.input {
       grid-template-columns: repeat(2, 1fr);
       row-gap: .5rem;
   }
-
+  .work__card {
+    max-height: 200px;
+  }
   .contact__container,
   .work__container {
-      grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 250px);
   }
 
   .work__item {
@@ -1287,6 +1293,6 @@ textarea.input {
 
 @supports ( -webkit-touch-callout : none) {
  html {
-  background-image: none;
+  background-image: #f4f1ec;
  }
   }
